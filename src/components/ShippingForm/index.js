@@ -9,7 +9,7 @@ import { Country, State, City } from 'country-state-city';
 const countries = [Country.getCountryByCode('ID')];
 const states = State.getStatesOfCountry('ID');
 const cities = City.getCitiesOfCountry('ID');
-const re = new RegExp(`\+?([ -]?\d+)+|\(\d+\)([ -]\d+)`);
+const re = \+?([ -]?\d+)+|\(\d+\)([ -]\d+)
 
 function ShippingForm({ confirmShipping }) {
   const {
